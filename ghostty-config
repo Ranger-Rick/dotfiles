@@ -1,0 +1,13 @@
+title = Ghostty
+
+font-size = 18
+font-feature = -calt, liga, dlig
+theme = Earthsong
+
+cursor-style = block
+cursor-style-blink = true
+background-opacity = .80
+background-blur-radius = 30
+mouse-hide-while-typing = true
+
+macos-icon = xray
