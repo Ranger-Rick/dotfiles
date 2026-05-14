@@ -6,7 +6,7 @@ tmux new-session -d -s $devsession
 
 tmux rename-window -t 0 'api'
 tmux send-keys -t 'api' 'zsh' C-m
-tmux send-keys -t 'api' 'cd /Users/rickbordelon/Documents/Projects/PioneerRx.Mobile.Api' C-m
+tmux send-keys -t 'api' 'cd /Users/rickbordelon/Documents/Projects/redsail-mobile-mono/legacy/PioneerRx.Mobile.Api' C-m
 tmux send-keys -t 'api' 'clear' C-m
 
 tmux new-window -t $devsession:1 -n 'mobile'
