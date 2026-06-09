@@ -23,6 +23,9 @@ alias tmux-config="nvim ~/.tmux.conf"
 alias wstart="networksetup -setairportpower en0 on"
 alias wstop="networksetup -setairportpower en0 off"
 
+alias song="osascript -e 'tell application \"Music\" to if player state is playing then get name of current track & \" - \" & artist of current track'"
+alias songr="song | sed -E 's/\(.*\)[[:space:]]*//g'"
+
 sc()
 {
     echo -n "https://support.pioneerrx.com/SupportCenter/IssueEdit.aspx?IssueNumber=$1" | pbcopy
