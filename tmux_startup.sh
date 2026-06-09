@@ -1,5 +1,6 @@
-devsession="dev"
-autosession="auto"
+devsession='dev'
+autosession='auto'
+rxlocalsession='rxlocal'
 
 #--- Dev Session ---
 tmux new-session -d -s $devsession
@@ -23,6 +24,12 @@ tmux new-window -t $devsession:3 -n 'nvim'
 tmux send-keys -t 'nvim' 'zsh' C-m
 tmux send-keys -t 'nvim' 'cd ~/.config/nvim/' C-m
 tmux send-keys -t 'nvim' 'clear' C-m
+
+#--- RxLocal Session ---
+tmux new-session -d -s $rxlocalsession
+tmux rename-window -t 0 'work'
+tmux send-keys -t 'work' 'zsh' C-m
+tmux send-keys -t 'work' 'cd /Users/rickbordelon/Documents/Projects/rxlocal-workspace' C-m
 
 #--- Automation Session ---
 tmux new-session -d -s $autosession
