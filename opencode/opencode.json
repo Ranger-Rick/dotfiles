@@ -9,6 +9,16 @@
                 "bunx",
                 "@playwright/mcp@0.0.70"
             ]
+        },
+        "atlassian-rovo": {
+            "enabled": true,
+            "type": "local",
+            "command": [
+                "bunx",
+                "-y",
+                "mcp-remote@latest",
+                "https://mcp.atlassian.com/v1/mcp/authv2"
+            ]
         }
     },
     "permission": {
