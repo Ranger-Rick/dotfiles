@@ -8,7 +8,6 @@ alias gsur="git submodule update --remote"
 alias gsu="git submodule update"
 alias lgit="lazygit"
 alias oc="opencode"
-alias localip="ipconfig getifaddr en0"
 alias change-pw="git config --global credential.helper osxkeychain"
 alias firebase='find . -name "firebase.config.json" | xargs sed -i "" "s/FIREBASE_API_KEY/${FIREBASE_API_KEY}/"'
 
@@ -26,6 +25,18 @@ alias wstop="networksetup -setairportpower en0 off"
 
 alias song="osascript -e 'tell application \"Music\" to if player state is playing then get name of current track & \" - \" & artist of current track'"
 alias songr="song | sed -E 's/\(.*\)[[:space:]]*//g'"
+
+localip()
+{
+    local ip
+    ip=$(ipconfig getifaddr en0 2>/dev/null)
+
+    if [[ -n "$ip" ]]; then
+        print -r -- "$ip"
+    else
+        ipconfig getifaddr en11 2>/dev/null
+    fi
+}
 
 sc()
 {
