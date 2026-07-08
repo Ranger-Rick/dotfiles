@@ -10,4 +10,6 @@ tmux new-session -d -s "mobile" -n "api" -c "/Users/rickbordelon/Documents/Proje
 tmux new-window -t "mobile:1" -n "mobile" -c "/Users/rickbordelon/Documents/Projects/redsail-mobile-mono"
 
 #--- RxLocal Session ---
-tmux new-session -d -s "rxlocal" -n "work" -c "/Users/rickbordelon/Documents/Projects/rxlocal-workspace"
+tmux new-session -d -s "rxlocal" -n "agents" -c "/Users/rickbordelon/Documents/Projects/rxlocal-workspace"
+tmux new-window t "rxlocal:1" -n "work" -c "/Users/rickbordelon/Documents/Projects/rxlocal-workspace"
+tmux new-window t "rxlocal:2" -n "run" -c "/Users/rickbordelon/Documents/Projects/rxlocal-workspace"
