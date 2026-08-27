@@ -14,10 +14,10 @@
             "Bash(find *)"
         ],
         "ask": [
-            "Bash(git *)"
+            "Bash(git *)",
+            "Bash(curl *)"
         ],
         "deny": [
-            "Bash(curl *)",
             "Read(./.env)",
             "Read(./.env.*)",
             "Read(./secrets/**)"
