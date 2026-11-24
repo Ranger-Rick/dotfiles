@@ -13,6 +13,7 @@ alias firebase='find . -name "firebase.config.json" | xargs sed -i "" "s/FIREBAS
 
 alias dpad="./run.sh --del -d \"\$(epad)\""
 alias dand="./run.sh --del --android"
+alias bsync="CAPACITOR_BUILD=1 npm run build:local; npx cap sync ios"
 
 alias ghost-config="nvim $HOME/Library/Application\ Support/com.mitchellh.ghostty/config"
 alias bash-config="nvim ~/.zshrc"
